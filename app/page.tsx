@@ -54,7 +54,7 @@ export default function Home() {
             <CustomFilter
               title="year"
               options={yearsOfProduction}
-              setFilter={setYear}
+              setFilter={(value) => setYear(parseInt(value, 10))}
             />
           </div>
         </div>
